@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twentyFive_sp">25sp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_set">25dp</dimen>
+    <dimen name="margin_score">35dp</dimen>
+
+</resources>
