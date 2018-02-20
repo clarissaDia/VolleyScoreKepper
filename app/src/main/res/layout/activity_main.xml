@@ -3,13 +3,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1976D2"
         android:orientation="vertical">
 
 
@@ -30,6 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/twenty_dp"
                     android:text="@string/team_1"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/twenty_sp" />
@@ -84,6 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/twenty_dp"
                     android:text="@string/team_2"
                     android:textColor="@color/text_color"
                     android:textSize="@dimen/twenty_sp" />
@@ -131,25 +133,32 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/reset_score"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="resetScore"
-            android:text="@string/reset_score"
-            android:textColor="@color/button_color"
-            android:layout_marginBottom="@dimen/margin_score"/>
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/reset_set"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="resetSet"
-            android:text="@string/reset_set"
-            android:textColor="@color/button_color"
-            android:layout_marginBottom="@dimen/margin_set"/>
+            <Button
+                android:id="@+id/reset_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_score"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:onClick="resetScore"
+                android:text="@string/reset_score"
+                android:textColor="@color/button_color" />
+
+            <Button
+                android:id="@+id/reset_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_set"
+                android:onClick="resetSet"
+                android:text="@string/reset_set"
+                android:textColor="@color/button_color" />
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -6,5 +6,6 @@
     <dimen name="margin_ten">10dp</dimen>
     <dimen name="margin_set">25dp</dimen>
     <dimen name="margin_score">35dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
 
 </resources>
